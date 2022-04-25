@@ -5,10 +5,14 @@
 @tailwind utilities;
 
 
+html {
+    @apply bg-gray-50
+}
+
 .row-title {
-    @apply text-gray-500 p-3 text-sm font-bold tracking-wide text-left
+    @apply text-gray-500 p-3 pt-8 text-sm font-bold tracking-wide text-left 
 }
 
 .td-text {
-    @apply  p-3 text-sm text-gray-500 whitespace-nowrap
+    @apply  p-4 text-sm text-gray-500 whitespace-nowrap 
 }

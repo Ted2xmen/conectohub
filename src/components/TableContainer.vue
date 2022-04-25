@@ -1,10 +1,13 @@
 <template>
-  <div class="h-screen md:container md:mx-auto justify-center">
-    <div class="overflow-auto rounded-lg shadow hidden md:block">
+  <div class="rounded-lg shadow-md md:container md:mx-auto justify-center bg-blue-200">
+   <div class="bg-green-900 py-8 my-8 rounded-lg">
+      <BoardMenu />
+      </div>
+    <div class="overflow-auto  hidden md:block bg-yellow-100 ">
+        <TableMenu />
       <table class="w-full">
         <TheadComponent />
-
-        <tbody class="divide-y divide-gray-100" v-for="(c, i) in Data" :key="i">
+        <tbody v-for="(c, i) in Data" :key="i">
           <TRComponent
             :result="c.key"
             :icon="c.icon"
@@ -96,6 +99,11 @@
 
 
 <script>
+import TableMenu from '@/components/TableMenu'
+import BoardMenu from '@/components/BoardMenu'
+
+
+
 import TRComponent from "@/components/Table/TRComponent.vue";
 import TheadComponent from "@/components/Table/TheadComponent.vue";
 
@@ -106,6 +114,8 @@ export default {
   components: {
     TheadComponent,
     TRComponent,
+    TableMenu,
+    BoardMenu
   },
   data() {
     return {

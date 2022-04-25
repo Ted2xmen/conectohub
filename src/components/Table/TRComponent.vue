@@ -1,13 +1,10 @@
 <template>
-  <tr class="bg-white">
-    <td class="td-text">
+  <tr class="divide-y">
+    <td class="td-text  divide-y ">
       {{ result }}
     </td>
 
-     <!-- <td class="td-text">
-      {{ icon }}
-    </td> -->
-<td > 
+<td class="td-text"> 
     <img v-if="icon" :src="icon" width="25" height="25" alt="icon"> </td>
 
     <td class="td-text">
