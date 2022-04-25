@@ -1,0 +1,126 @@
+[
+    {
+        "key": "NPS",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Google_Photos_icon_%282015-2020%29.svg/796px-Google_Photos_icon_%282015-2020%29.svg.png",
+        "start": "20",
+        "target": "100",
+        "current": "100",
+        "checkinprogress": [
+            "1",
+            "2",
+            "3"
+        ],
+        "owners": [
+            {
+                "title": "Tugrul",
+                "avatar": ""
+            }
+        ],
+        "lastcheckin": "0 > 100"
+    },
+    {
+      "key": "Percentage Leads",
+      "icon": "https://cdn.iconscout.com/icon/free/png-256/salesforce-282298.png",
+      "start": "0",
+      "target": "75",
+      "current": "75",
+      "checkinprogress": ["1", "2", "3"],
+      "owners": [
+        {
+          "title": "Tugrul",
+          "avatar": ""
+        }
+      ],
+      "lastcheckin": "60 > 15"
+    },
+    {
+      "key": "Close Rate",
+      "icon": "",
+      "start": "22",
+      "target": "27",
+      "current": "26",
+      "checkinprogress": ["1", "2", "3"],
+      "owners": [
+        {
+          "title": "Tugrul",
+          "avatar": ""
+        }
+      ],
+      "lastcheckin": "0 > 14"
+    },
+    {
+      "key": "Quarterly Revenue",
+      "icon": "",
+      "start": "20K",
+      "target": "100K",
+      "current": "95K",
+      "checkinprogress": ["1", "2", "3"],
+      "owners": [
+        {
+          "title": "Tugrul",
+          "avatar": ""
+        }
+      ],
+      "lastcheckin": "0 > 0"
+    },
+    {
+      "key": "New Country Revenue",
+      "icon": "",
+      "start": "0",
+      "target": "100K",
+      "current": "0",
+      "checkinprogress": ["1", "2", "3"],
+      "owners": [
+        {
+          "title": "Tugrul",
+          "avatar": ""
+        }
+      ],
+      "lastcheckin": "0 > 0"
+    },
+    {
+      "key": "Profit Margin",
+      "icon": "",
+      "start": "0",
+      "target": "54",
+      "current": "23",
+      "checkinprogress": ["1", "2", "3"],
+      "owners": [
+        {
+          "title": "Tugrul",
+          "avatar": ""
+        }
+      ],
+      "lastcheckin": "0 > 100"
+    },
+    {
+      "key": "Customer",
+      "icon": "",
+      "start": "20",
+      "target": "100",
+      "current": "70",
+      "checkinprogress": ["1", "2", "3"],
+      "owners": [
+        {
+          "title": "Tugrul",
+          "avatar": ""
+        }
+      ],
+      "lastcheckin": "0 > 0"
+    },
+    {
+      "key": "Happiness",
+      "icon": "https://play-lh.googleusercontent.com/CiGs15N1e1tXrSnVLEY9jOnKi1oNzPQNRjqhR8fXE0pnu_bRyNmfc8xXr2VQUJTfJ9A",
+      "start": "50",
+      "target": "100",
+      "current": "36",
+      "checkinprogress": ["1", "2", "3"],
+      "owners": [
+        {
+          "title": "Tugrul",
+          "avatar": ""
+        }
+      ],
+      "lastcheckin": "0 > 70"
+    }
+]

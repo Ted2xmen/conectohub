@@ -3,3 +3,12 @@
 @tailwind components;
 
 @tailwind utilities;
+
+
+.row-title {
+    @apply text-gray-500 p-3 text-sm font-bold tracking-wide text-left
+}
+
+.td-text {
+    @apply  p-3 text-sm text-gray-500 whitespace-nowrap
+}
