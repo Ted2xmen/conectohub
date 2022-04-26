@@ -18,14 +18,7 @@
 
     <td class="">
       <span
-        class="
-          text-sm
-          p-1.5
-          rounded
-          text-gray-600
-          hover:text-gray-100
-          bg-yellow-500
-        "
+        class="rounded bg-yellow-500 p-1.5 text-sm text-gray-600 hover:text-gray-100"
         >{{ current }}</span
       >
     </td>
@@ -47,16 +40,9 @@
         />
       </svg>
       <td
-        class="
-          flex
-          place-items-center
-          justify-center
-          space-y-2 space-x-1
-          overflow-x-scroll
-          max-w-md
-        "
+        class="flex max-w-md place-items-center justify-center space-y-2 space-x-1 overflow-x-scroll"
       >
-        <div class="pt-2 py-1" v-for="(n, i) in progress" :key="i">
+        <div class="py-1 pt-2" v-for="(n, i) in progress" :key="i">
           <BoxComponent :number="n" color="green" />
         </div>
       </td>
@@ -72,26 +58,56 @@
       </svg>
     </div>
 
+    <!-- <td >
+      <div class=" space-x-1">
+ <div class="flex overflow-hidden">
+      <img :src="owners[0].avatar" width="30" class="avatar" alt="">
+            <img :src="owners[1].avatar" width="30" class="avatar" alt="">
+      <img :src="owners[2].avatar" width="30" class="" alt="avatar">
 
-
-    <td class="td-text ">
-      <div class="flex space-x-1">
- <div  v-for="(img, i) in owners" :key="i">
-      <img :src="img.avatar" width="30" class="rounded-full" alt="">
   </div>
 
       </div>
      
+    </td> -->
+
+    <td>
+      <div class="flex items-center justify-start">
+        <div
+          v-if="owners[0].avatar"
+          class="-mx-2 flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border-2 border-white"
+        >
+          <img :src="owners[0].avatar" />
+        </div>
+
+        <div
+          v-if="owners[1].avatar"
+          class="-mx-2 flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border-2 border-white"
+        >
+          <img :src="owners[1].avatar" />
+        </div>
+
+        <div
+          class="-mx-2 flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border-2 border-white"
+        >
+          <img :src="owners[2].avatar" />
+        </div>
+
+        <div
+          class="-mx-2 flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border-2 border-white"
+        >
+          <img :src="owners[3].avatar" />
+        </div>
+
+        <!-- <div v-if="owners.length > 2" class="flex items-center justify-center w-10 h-10 -mx-2 overflow-hidden rounded-full border-2 border-white">
+        <span class="bg-gray-600 text-white ronuded-full w-10 h-10 flex items-center justify-center">2+</span>
+      </div> -->
+      </div>
     </td>
-
-
-
-
 
     <td class="td-text">{{ last }}</td>
   </tr>
 </template>
-
 
 <script>
 import BoxComponent from "@/components/Box/BoxComponent.vue";
@@ -113,5 +129,3 @@ export default {
   },
 };
 </script>
-
-

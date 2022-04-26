@@ -16,3 +16,7 @@ html {
 .td-text {
     @apply  p-4 text-sm text-gray-500 whitespace-nowrap 
 }
+
+.avatar {
+    @apply inline-block h-6 w-6 rounded-full ring-2 ring-white
+}
