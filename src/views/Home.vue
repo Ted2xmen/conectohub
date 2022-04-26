@@ -1,8 +1,6 @@
 <template>
-  <div id="home" class="pb-24">
-   
+  <div id="home" class="pb-12">
     <TableContainer />
-
   </div>
 </template>
 

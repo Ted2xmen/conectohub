@@ -10,11 +10,11 @@ html {
 }
 
 .row-title {
-    @apply text-gray-500 p-3 pt-8 text-sm font-bold tracking-wide text-left 
+    @apply text-gray-500 p-3 pt-8 text-sm font-bold tracking-wide text-left
 }
 
 .td-text {
-    @apply  p-4 text-sm text-gray-500 whitespace-nowrap 
+    @apply p-4 text-sm text-gray-500 whitespace-nowrap
 }
 
 .avatar {
@@ -22,5 +22,20 @@ html {
 }
 
 .avatar-text {
-    @apply h-8 w-8  ring-2 ring-white rounded-full flex justify-center items-center bg-yellow-200 text-gray-400 font-bold
+    @apply h-8 w-8 ring-2 ring-white rounded-full flex justify-center items-center bg-yellow-200 text-gray-400 font-bold
+}
+
+/* board menu   */
+
+.board {
+    @apply bg-yellow-500 sm:bg-blue-500 md:bg-red-500 flex place-items-center justify-between text-gray-600 pt-12 rounded-t-lg
+}
+
+
+.board-btn {
+    @apply flex place-items-center cursor-pointer border-gray-400 p-6 border-b-2
+}
+
+.board-widget {
+    @apply flex p-4 text-gray-600 bg-yellow-100 m-2 rounded-lg cursor-pointer
 }

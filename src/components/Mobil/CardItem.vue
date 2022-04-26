@@ -1,8 +1,8 @@
 <template>
-  <div class="p-2">
+  <div class="p-2 grid grid-cols-1 sm:grid-cols-1 gap-2">
 
     <div class="p-4 rounded-md shadow-md bg-gray-400">
-      <div>
+      <div v-if="false">
         <span class="text-sm">Check-in Progress</span>
         <div class="flex py-2">
           <div v-for="item in 18" :key="item" class="px-1 gap-2">

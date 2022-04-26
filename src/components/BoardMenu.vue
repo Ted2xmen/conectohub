@@ -1,27 +1,15 @@
 <template>
-  <div
-    class="flex place-items-center justify-between py-4 mb-1 px-4 text-gray-600"
-  >
-    <div class="">
-      <div
-        class="
-          flex
-          place-items-center
-          cursor-pointer
-          border-gray-400
-          p-6
-          border-b-2
-        "
-      >
+  <div class="board">
+    <div class="rounded-t-lg bg-gray-200 hover:bg-gray-300 mx-2">
+      <div class="board-btn">
         <select
           aria-label="select"
           class="
-          cursor-pointer
+            cursor-pointer
             focus:text-green-600
             text-xl
             focus:outline-none
             bg-transparent
-            ml-1
           "
         >
           <option class="text-lg text-gray-800">Key Result Board</option>
@@ -31,11 +19,11 @@
       </div>
     </div>
 
-    <div class="flex space-x-6">
-      <div class="flex mx-12 place-items-center cursor-pointer">
+    <div class="flex space-x-10">
+      <div class="flex place-items-center cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
+          class="h-8 w-8 mx-8"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -49,16 +37,7 @@
         </svg>
       </div>
 
-      <div
-        class="
-          flex
-          p-8
-          text-gray-600
-          bg-yellow-300
-          border-2 border-yellow-300
-          cursor-pointer
-        "
-      >
+      <div class="board-widget">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-6"
