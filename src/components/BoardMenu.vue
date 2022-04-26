@@ -1,5 +1,7 @@
 <template>
-  <div class="flex place-items-center py-4 mb-1 px-4 text-gray-600">
+  <div
+    class="flex place-items-center justify-between py-4 mb-1 px-4 text-gray-600"
+  >
     <div class="">
       <div
         class="
@@ -14,8 +16,9 @@
         <select
           aria-label="select"
           class="
+          cursor-pointer
             focus:text-green-600
-            text-2xl
+            text-xl
             focus:outline-none
             bg-transparent
             ml-1
