@@ -1,6 +1,6 @@
 <template>
-  <div class="flex place-items-center justify-between py-4">
-    <div class="">
+  <div class="flex place-items-center justify-between py-8">
+    <div>
       <div class="flex place-items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@
             d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
           />
         </svg>
-        <h1 class="text-4xl font-semibold">Key Result Board</h1>
+        <h1 class="text-5xl font-semibold text-gray-700">Key Result Board</h1>
       </div>
     </div>
 
@@ -24,7 +24,7 @@
       <div class="flex mx-2 cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 mx-2"
+          class="h-6 w-6 mx-2 text-gray-600"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -42,13 +42,14 @@
           type="date"
           class="
             focus:text-green-600
-            text-xl
+            text-lg
+            text-gray-700
             focus:outline-none
             bg-transparent
             ml-1
           "
         >
-          <option class="text-md text-gray-800">All Time</option>
+          <option class="text-md text-gray-800 cursor-pointer">All Time</option>
           <option class="text-md text-gray-800">This Week</option>
           <option class="text-md text-gray-800">Last Week</option>
         </select>
@@ -57,7 +58,7 @@
       <div class="flex mx-2 cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 mx-2"
+          class="h-6 w-6 mx-2 text-gray-600"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -74,13 +75,14 @@
           type="date"
           class="
             focus:text-green-600
-            text-xl
+            text-lg
+            text-gray-700
             focus:outline-none
             bg-transparent
             ml-1
           "
         >
-          <option class="text-md text-gray-800">Start</option>
+          <option class="text-md text-gray-800 cursor-pointer">Start</option>
           <option class="text-md text-gray-800">Target</option>
           <option class="text-md text-gray-800">Current</option>
         </select>
