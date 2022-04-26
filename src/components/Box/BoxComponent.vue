@@ -1,13 +1,17 @@
 <template>
   <span
-    :class="`px-2
+    :class="`px-4
       py-0
+      flex
+      place-items-center
+      justify-center
+      items-center
       mx-1
       leading-loose
       rounded-md
-      w-8
-      h-8
-      bg-${color}-600
+      w-7
+      h-7
+      bg-${color}-700
       text-gray-100 
       cursor-pointer
       text-sm

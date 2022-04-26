@@ -1,6 +1,22 @@
 <template>
-  <div class="board ">
-    <div class="rounded-b-lg bg-gray-200 hover:bg-gray-300 mx-2">
+  <div class="board">
+  <div class="flex place-items-center justify-center cursor-pointer border-gray-700">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-9 w-9 mx-6 border-2 border-gray-400 rounded-lg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 4v16m8-8H4"
+          />
+        </svg>
+
+          <div class="rounded-lg bg-gray-200 hover:bg-gray-300 mx-2">
       <div class="board-btn">
         <select
           aria-label="select"
@@ -18,25 +34,9 @@
         </select>
       </div>
     </div>
-
-    <div class="flex space-x-0">
-      <div class="flex place-items-center justify-center cursor-pointer border-gray-700">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-9 w-9 mx-6 border-2 border-gray-400 rounded-lg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M12 4v16m8-8H4"
-          />
-        </svg>
       </div>
 
+    <div class="flex space-x-0">
       <div class="board-widget space-x-1 mr-1">
            <h4>Add Widget</h4>
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">

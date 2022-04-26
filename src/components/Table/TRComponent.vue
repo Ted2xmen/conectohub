@@ -27,7 +27,7 @@
       >
     </td>
 
-    <div class="flex place-items-center justify-start space-x-4">
+    <div class="flex place-items-center place-self-center justify-center align-items-center space-x-4">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-4 w-4"
@@ -44,6 +44,7 @@
       <td
         class="
           flex
+          pb-2
           max-w-md
           place-items-center
           justify-center
@@ -66,7 +67,7 @@
     </div>
 
     <td>
-      <div class="flex items-center -space-x-2 justify-center overflow-hidden py-2">
+      <div class="flex  overflow-x-auto   max-w-md items-center -space-x-1 justify-center overflow-hidden py-2">
         <div>
           <img
             className="avatar"

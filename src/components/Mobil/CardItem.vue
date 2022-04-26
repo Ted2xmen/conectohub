@@ -1,50 +1,51 @@
 <template>
   <div class="p-2 grid grid-cols-1 sm:grid-cols-1 gap-2">
-
-    <div class="p-4 rounded-md shadow-md bg-gray-400">
-      <div v-if="false">
-        <span class="text-sm">Check-in Progress</span>
+     
+    <div class="p-4 rounded-md shadow-md bg-gray-200">
+      <div class="flex space-x-2 align-items-center">
+        <h2 class="text-lg font-semibold text-gray-600">{{ result }}</h2>
+      </div>
+       <div class="flex
+          max-w-md
+          place-items-center
+          justify-center
+          space-y-2 space-x-1
+          overflow-x-scroll">
         <div class="flex py-2">
-          <div v-for="item in 18" :key="item" class="px-1 gap-2">
-            <div class="w-6 h-6 bg-green-600 text-white p-1 rounded-md">50</div>
+          <div v-for="progress in progress" :key="progress" class="p-1 gap-2">
+            <div class="w-8 h-7 bg-green-700 flex justify-center place-items-center text-white p-2 rounded-md">{{progress}}</div>
           </div>
         </div>
       </div>
-
-      <div class="flex py-2 space-x-2">
-        <h2 class="font-bold" >Key Result</h2>
-        <h2 class="text-md text-gray-500">{{ result }}</h2>
-      </div>
-
       <div class="flex items-center mt-6 space-x-8 text-xs">
-
-
         <div class="sm:inline-flex sm:items-center sm:shrink-0">
           <div class="sm:ml-3 mt-1.5 sm:mt-0">
-            <div class="text-gray-500">Start</div>
+            <div class="text-gray-500 font-semibold">Start</div>
 
-            <div class="font-medium">{{ start }}</div>
+            <div class="font-medium text-lg">{{ start }}</div>
           </div>
         </div>
 
         <div class="sm:inline-flex sm:items-center sm:shrink-0">
           <div class="sm:ml-3 mt-1.5 sm:mt-0">
-            <div class="text-gray-500">Target</div>
+            <div class="text-gray-500 font-semibold">Target</div>
 
-            <div class="font-medium">{{ target }}</div>
+            <div class="font-medium text-lg">{{ target }}</div>
           </div>
         </div>
 
         <div class="sm:inline-flex sm:items-center sm:shrink-0">
           <div class="sm:ml-3 mt-1.5 sm:mt-0">
-            <dt class="text-gray-500">Current</dt>
+            <dt class="text-gray-500 font-semibold">Current</dt>
 
-            <dd class="font-medium">{{ current }}</dd>
+            <dd class="font-medium text-lg">{{ current }}</dd>
           </div>
         </div>
 
-        <div class="flex items-center space-x-2 justify-end overflow-hidden">
-          <div class="text-gray-500">Owners</div>
+        <div class="flex items-center p-2 space-x-2 justify-end overflow-hidden">
+          <div><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+</svg></div>
 
           <div>
             <img
@@ -102,9 +103,9 @@
 
              <div class="sm:inline-flex sm:items-center sm:shrink-0">
           <div class="sm:ml-3 mt-1.5 sm:mt-0">
-            <dt class="text-gray-500">Last Checkin</dt>
+            <div class="text-gray-500 font-semibold">Last Checkin</div>
 
-            <dd class="font-medium">{{ last }}</dd>
+            <div class="font-medium text-lg">{{ last }}</div>
           </div>
         </div>
       </div>
@@ -114,6 +115,8 @@
 
 <script>
 export default {
+  components: {
+  },
   props: [
     "result",
     "icon",

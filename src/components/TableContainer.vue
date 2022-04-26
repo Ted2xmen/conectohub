@@ -23,7 +23,11 @@
       </table>
     </div>
 
-    <div v-for="(c, i) in Data" :key="i" class="md:hidden">
+
+<div class="md:hidden">  
+     <TableMenu />
+<div v-for="(c, i) in Data" :key="i" >
+ 
       <CardItem
         :result="c.key"
         :start="c.start"
@@ -31,8 +35,12 @@
         :current="c.current"
         :owners="c.owners"
         :last="c.lastcheckin"
+        :progress="c.checkinprogress"
+
       />
     </div>
+</div>
+    
   </div>
 </template>
 

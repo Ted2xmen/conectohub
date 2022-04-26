@@ -18,11 +18,11 @@ html {
 }
 
 .avatar {
-    @apply inline-block h-8 w-8 rounded-full ring-2 ring-white
+    @apply inline-block h-6 w-6 rounded-full ring-2 ring-yellow-300
 }
 
 .avatar-text {
-    @apply h-8 w-8 ring-2 ring-white rounded-full flex justify-center items-center bg-yellow-200 text-gray-400 font-bold
+    @apply h-6 w-6 ring-2 ring-yellow-300 rounded-full flex justify-center items-center bg-yellow-200 text-gray-400 font-bold text-xs
 }
 
 /* board menu   */
@@ -33,10 +33,10 @@ html {
 
 
 .board-btn {
-    @apply flex place-items-center cursor-pointer border-gray-400 p-6  
+    @apply flex place-items-center cursor-pointer border-gray-400 p-4  
 }
 
 .board-widget {
-    @apply flex  p-3 text-gray-600 bg-yellow-200 hover:bg-yellow-300 m-2 rounded-lg cursor-pointer
+    @apply flex p-3 text-gray-600 bg-yellow-200 hover:bg-yellow-300 m-2 rounded-lg cursor-pointer
 }
 
