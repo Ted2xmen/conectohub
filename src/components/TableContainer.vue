@@ -17,6 +17,7 @@
             :progress="c.checkinprogress"
             :owners="c.owners"
             :last="c.lastcheckin"
+            :color="c.color"
           />
         </tbody>
       </table>
