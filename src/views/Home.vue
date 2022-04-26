@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="home" class="pb-24">
    
     <TableContainer />
 

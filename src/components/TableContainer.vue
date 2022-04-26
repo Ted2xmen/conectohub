@@ -1,9 +1,9 @@
 <template>
-  <div class="rounded-lg shadow-md md:container md:mx-auto justify-center bg-blue-200">
-   <div class="bg-green-900 py-8 my-8 rounded-lg">
+  <div class="rounded-lg shadow-md md:container md:mx-auto justify-center">
+   <div class="py-4 my-12 rounded-lg bg-gray-200 shadow-md">
       <BoardMenu />
       </div>
-    <div class="overflow-auto  hidden md:block bg-yellow-100 ">
+    <div class="overflow-auto  hidden md:block  ">
         <TableMenu />
       <table class="w-full">
         <TheadComponent />
