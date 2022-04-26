@@ -6,9 +6,10 @@
     <div class="overflow-auto  hidden md:block  ">
         <TableMenu />
       <table class="w-full">
-        <TheadComponent />
-        <tbody v-for="(c, i) in Data" :key="i">
+        <TheadComponent  />
+        <tbody  v-for="(c, i) in Data" :key="i">
           <TRComponent
+          
             :result="c.key"
             :icon="c.icon"
             :start="c.start"

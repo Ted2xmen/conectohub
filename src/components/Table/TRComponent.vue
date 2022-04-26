@@ -31,7 +31,7 @@
     </td>
 
     <!-- {{ progress }}  -->
-    <div class="flex place-items-center space-x-2">
+    <div class="flex place-items-center justify-start space-x-1">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-4 w-4"
@@ -74,11 +74,19 @@
 
 
 
-    <td class="td-text">{{ owners }}</td>
+    <td class="td-text ">
+      <div class="flex space-x-1">
+ <div  v-for="(img, i) in owners" :key="i">
+      <img :src="img.avatar" width="30" class="rounded-full" alt="">
+  </div>
+
+      </div>
+     
+    </td>
 
 
 
-    
+
 
     <td class="td-text">{{ last }}</td>
   </tr>
