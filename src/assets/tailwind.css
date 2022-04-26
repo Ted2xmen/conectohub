@@ -10,7 +10,7 @@ html {
 }
 
 .row-title {
-    @apply text-gray-500 p-3 pt-8 text-sm font-bold tracking-wide text-left border-b-2 border-gray-300
+    @apply text-gray-500 p-3 pt-8 text-lg font-bold tracking-wide text-left border-b-2 border-gray-300
 }
 
 .td-text {
