@@ -18,5 +18,9 @@ html {
 }
 
 .avatar {
-    @apply inline-block h-6 w-6 rounded-full ring-2 ring-white
+    @apply inline-block h-8 w-8 rounded-full ring-2 ring-white
+}
+
+.avatar-text {
+    @apply h-8 w-8  ring-2 ring-white rounded-full flex justify-center items-center bg-yellow-200 text-gray-400 font-bold
 }

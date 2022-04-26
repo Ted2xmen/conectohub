@@ -72,32 +72,78 @@
     </td> -->
 
     <td>
-      <div class="flex items-center justify-start">
-        <div
+      <div class="flex items-center -space-x-2 justify-start overflow-hidden">
+
+
+      
+          
+        
+          
+
+
+                <div>
+       <img
+          className="avatar"
           v-if="owners[0].avatar"
-          class="-mx-2 flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border-2 border-white"
-        >
-          <img :src="owners[0].avatar" />
-        </div>
+          :src="owners[0].avatar"
+          alt=""
+        />
+        <span v-else class="avatar-text">{{owners[0].title.slice(0,1)}}</span>
+                </div>
 
-        <div
+                            <div>
+       <img
+          className="avatar"
           v-if="owners[1].avatar"
+          :src="owners[1].avatar"
+          alt=""
+        />
+        <span v-else class="avatar-text">{{owners[1].title.slice(0,1)}}</span>
+                </div>
+
+                            <div>
+       <img
+          className="avatar"
+          v-if="owners[2].avatar"
+          :src="owners[2].avatar"
+          alt=""
+        />
+        <span v-else class="avatar-text">{{owners[2].title.slice(0,1)}}</span>
+                </div>
+
+        <div>
+      
+        <span v-if="owners.length > 3" class="avatar-text">2 +</span>
+                </div>
+
+                
+
+                
+
+                
+
+
+    
+
+           
+
+
+
+
+
+   
+
+        <!-- <div v-if="owners[2]"
           class="-mx-2 flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border-2 border-white"
         >
-          <img :src="owners[1].avatar" />
-        </div>
+          <img  :src="owners[2].avatar" />
+        </div> -->
 
-        <div
+        <!-- <div
           class="-mx-2 flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border-2 border-white"
         >
           <img :src="owners[2].avatar" />
-        </div>
-
-        <div
-          class="-mx-2 flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border-2 border-white"
-        >
-          <img :src="owners[3].avatar" />
-        </div>
+        </div> -->
 
         <!-- <div v-if="owners.length > 2" class="flex items-center justify-center w-10 h-10 -mx-2 overflow-hidden rounded-full border-2 border-white">
         <span class="bg-gray-600 text-white ronuded-full w-10 h-10 flex items-center justify-center">2+</span>
