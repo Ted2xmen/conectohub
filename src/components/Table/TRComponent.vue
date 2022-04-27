@@ -22,7 +22,7 @@
           p-1.5
           text-sm text-gray-600"
         >
-        <span class="w-2 h-2 px-2 m-1 bg-yellow-500 rounded-sm"></span>
+        <span class="w-2 h-2 px-2 m-1 bg-yellow-600 rounded-sm"></span>
         {{ current }} </span
       >
     </td>

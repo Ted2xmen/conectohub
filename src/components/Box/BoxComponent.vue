@@ -11,7 +11,7 @@
       rounded-md
       w-7
       h-7
-      bg-${color}-700
+      bg-${color}-600
       text-gray-100 
       cursor-pointer
       text-sm

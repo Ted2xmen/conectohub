@@ -18,17 +18,17 @@ html {
 }
 
 .avatar {
-    @apply inline-block h-6 w-6 rounded-full ring-2 ring-yellow-300
+    @apply inline-block h-6 w-6 rounded-full ring-2 ring-yellow-400 
 }
 
 .avatar-text {
-    @apply h-6 w-6 ring-2 ring-yellow-300 rounded-full flex justify-center items-center bg-yellow-200 text-gray-400 font-bold text-xs
+    @apply h-6 w-6 ring-2 ring-yellow-400 rounded-full flex justify-center items-center bg-yellow-300 text-gray-500 font-bold text-xs
 }
 
 /* board menu   */
 
 .board {
-    @apply bg-gray-100 flex flex-wrap px-4 place-items-center justify-center md:justify-between text-gray-600 pb-6 pt-12 mb-8 shadow-md rounded-b-lg
+    @apply bg-gray-100 flex flex-wrap px-4 place-items-center content-center justify-center md:justify-between text-gray-600 pb-6 pt-12 mb-8 shadow-md rounded-b-lg space-y-2
 }
 
 
@@ -37,6 +37,9 @@ html {
 }
 
 .board-widget {
-    @apply flex p-3 text-gray-600 bg-yellow-200 hover:bg-yellow-300 m-2 rounded-lg cursor-pointer
+    @apply flex py-3 px-2 ml-4 text-gray-600 bg-yellow-400 hover:bg-yellow-300 rounded-lg cursor-pointer
 }
 
+.board-home {
+    @apply flex place-items-center justify-center mr-5 text-gray-600 cursor-pointer
+}
