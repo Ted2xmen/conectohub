@@ -40,12 +40,13 @@
       />
     </div>
 </div>
-    
   </div>
 </template>
 
 
 <script>
+
+
 import TableMenu from "@/components/TableMenu";
 import BoardMenu from "@/components/BoardMenu";
 
@@ -64,6 +65,7 @@ export default {
     TableMenu,
     BoardMenu,
     CardItem,
+    
   },
   data() {
     return {

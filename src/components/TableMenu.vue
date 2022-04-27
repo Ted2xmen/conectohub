@@ -1,5 +1,5 @@
 <template>
-  <div class="flex place-items-center justify-between py-8">
+  <div class="flex flex-wrap space-y-2 place-items-center justify-between py-8">
     <div>
       <div class="flex place-items-center">
         <svg

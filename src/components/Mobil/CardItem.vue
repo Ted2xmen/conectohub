@@ -71,32 +71,12 @@
             }}</span>
           </div>
 
-          <div>
-            <img
-              className="avatar"
-              v-if="owners[2].avatar"
-              :src="owners[2].avatar"
-              alt=""
-            />
-            <span v-else class="avatar-text">{{
-              owners[2].title.slice(0, 1)
-            }}</span>
-          </div>
+   
 
-             <div>
-            <img
-              className="avatar"
-              v-if="owners[3].avatar"
-              :src="owners[3].avatar"
-              alt=""
-            />
-            <span v-else class="avatar-text">{{
-              owners[3].title.slice(0, 1)
-            }}</span>
-          </div>
+  
 
           <div>
-            <span v-if="owners.length > 5" class="avatar-text">2 +</span>
+            <span v-if="owners.length > 3" class="avatar-text">2 +</span>
           </div>
         </div>
 
