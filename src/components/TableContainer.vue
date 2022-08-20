@@ -23,35 +23,29 @@
       </table>
     </div>
 
-
-<div class="md:hidden">  
-     <TableMenu />
-<div v-for="(c, i) in Data" :key="i" >
- 
-      <CardItem
-        :result="c.key"
-        :start="c.start"
-        :target="c.target"
-        :current="c.current"
-        :owners="c.owners"
-        :last="c.lastcheckin"
-        :progress="c.checkinprogress"
-
-      />
+    <div class="md:hidden">
+      <TableMenu />
+      <!-- for mobile devices -->
+      <div v-for="(c, i) in Data" :key="i">
+        <CardItem
+          :result="c.key"
+          :start="c.start"
+          :target="c.target"
+          :current="c.current"
+          :owners="c.owners"
+          :last="c.lastcheckin"
+          :progress="c.checkinprogress"
+        />
+      </div>
     </div>
-</div>
   </div>
 </template>
 
 
 <script>
-
-
 import TableMenu from "@/components/TableMenu";
 import BoardMenu from "@/components/BoardMenu";
-
 import CardItem from "@/components/Mobil/CardItem.vue";
-
 import TRComponent from "@/components/Table/TRComponent.vue";
 import TheadComponent from "@/components/Table/TheadComponent.vue";
 
@@ -65,7 +59,6 @@ export default {
     TableMenu,
     BoardMenu,
     CardItem,
-    
   },
   data() {
     return {
